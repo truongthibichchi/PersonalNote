@@ -1,0 +1,24 @@
+﻿- Giới thiệu Kafka: https://viblo.asia/p/kafka-la-gi-gDVK2Q7A5Lj
+- Avro: https://helpex.vn/article/su-dung-avro-cho-du-lieu-lon-va-kien-truc-truyen-du-lieu-gioi-thieu-5c6b16f4ae03f628d053bae4
+- Hướng dẫn sử dụng Kafka: https://kafka.apache.org/quickstart
+			   https://dzone.com/articles/apache-kafka-basic-setup-and-usage-with-command-li?fbclid=IwAR2dNCwyCVpFF1PFSAH4-OSr44go8TQIhivrAo4W93Hv68G36Wy9H7biogg
+- Zookeeper: https://www.youtube.com/watch?v=gifeThkqHjg
+- Kafka with golang: https://medium.com/@yusufs/getting-started-with-kafka-in-golang-14ccab5fa26
+
+* TUTORIALS:
+- start zookeeper server:
+./zookeeper-server-start.bat ../../config/zookeeper.properties
+
+
+- start kafka server:
+
+./kafka-server-start.bat ../../config/server.properties
+
+
+- Create a topic:
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+- List topics:
+kafka-topics.bat --list --zookeeper localhost:2181
+
+* Mai: Xem cách xóa topic, replicas, respone data from consumer
