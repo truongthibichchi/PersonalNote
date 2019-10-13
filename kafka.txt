@@ -1,0 +1,30 @@
+Sử dụng Kafka để giao tiếp giữa các Microservice trong Golang.
+https://www.melvinvivas.com/developing-microservices-using-kafka-and-mongodb/#video1
+https://stackoverflow.com/questions/25037263/apache-kafka-error-on-windows-couldnot-find-or-load-main-class-quorumpeermain/29956869
+https://github.com/confluentinc/confluent-kafka-go
+
+
+Dowload JDK 8
+Setup Java_Home
+
+Dowload Kafka
+https://www.apache.org/dyn/closer.cgi?path=/kafka/2.2.1/kafka_2.12-2.2.1.tgz
+Run ZooKeeper
+/c/Tools/kafka_2.12-2.2.1/bin/windows
+./zookeeper-server-start.bat ../../config/zookeeper.properties
+
+Run Kafka
+
+./kafka-server-start.bat ../../config/server.properties
+
+Create a topic:
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+List topics:
+kafka-topics.bat --list --zookeeper localhost:2181
+
+https://dzone.com/articles/apache-kafka-basic-setup-and-usage-with-command-li
+
+- kiem tra config cua docker image: docker inspect <id>
+- goroutines
+- slide va array
+- List va Array list
